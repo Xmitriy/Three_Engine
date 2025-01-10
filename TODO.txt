@@ -1,0 +1,42 @@
+GAME ENGINE:
+=========================
+
+Rename game engine?
+  Possible names:
+  - Blitz (package name blitz taken, but could use blitz-js or blitz-3d)
+  - PolyWhirl
+  - Reality3
+  - Basys
+  - Foundation
+  - Mortar
+  - Paragon
+  - Vortex
+  - Fusion Engine
+
+SCENE EDITOR:
+=========================
+- Preview a file, in Project Files
+   - JSON Files
+   - GLTF/GLB Files
+   - Audio Files
+
+- Editor (in general)
+  - undo/redo
+
+- Editor Settings:
+  - Manual Save (setting to disable auto saving, and click a button to save files)
+  - Show/hide lighting
+
+- Editing scenes:
+   - background
+   - camera settings
+   - Scene level components:
+      - cameras
+
+- Editing GameObjects:
+   - add/edit cameras
+   - Change game object type
+   - Copy/Paste game objects
+
+- Editing GameObjectTypes:
+   - add/edit cameras

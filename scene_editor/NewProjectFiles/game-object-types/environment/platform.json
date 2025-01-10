@@ -1,0 +1,14 @@
+{
+  "models": [
+    { "assetPath": "models/environment/platform.gltf" }
+  ],
+  "lights": [
+    { "type": "AmbientLight", "intensity": 0.5 }
+  ],
+  "rigidBody": {
+    "type": "fixed",
+    "colliders": [
+      { "type": "cuboid", "hx": 5, "hy": 0.5, "hz": 5 }
+    ]
+  }
+}

@@ -1,0 +1,373 @@
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.divider {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.divider-line {
+    height: 1px;
+    border-top: 1px solid darkgray;
+    flex-grow: 1;
+}
+
+.divider-label {
+    margin: 0 5px;
+}
+
+#app {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.main-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-area canvas {
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+.main-area-error {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightcoral;
+    color: red;
+    text-align: center;
+}
+
+.main-area-error h5 {
+    font-size: 1em;
+}
+
+.main-area-error p {
+    font-size: 1.5em;
+}
+
+.status-bar {
+    border-top: 1px solid darkgray;
+    height: 30px;
+    background-color: lightgray;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar-item {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    width: 400px;
+    height: 100%;
+    background-color: #404040;
+    overflow-y: auto;
+}
+
+.sidebar-panel {
+    margin: 5px;
+    margin-top: 2px;
+}
+
+.sidebar-panel-header {
+    margin: 5px 0px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sidebar-panel-label {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.sidebar-panel-header button {
+    margin-left: 10px;
+    font-size: 0.7em;
+}
+
+.sidebar-panel-content {
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: '#606060';
+    color: white;
+}
+
+.tree-view {
+    cursor: pointer;
+}
+
+.tree-view-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 5px;
+    padding: 2px;
+}
+
+.tree-view-header:hover {
+    background-color: #303030;
+}
+
+.tree-view-expand-button {
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    font-weight: bold;
+}
+
+.tree-view-expand-placeholder {
+    width: 15px;
+    height: 15px;
+}
+
+.tree-view-label {
+    display: flex;
+    align-items: center;
+}
+
+.error-badge {
+    color: white;
+    font-size: small;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: #aa1414;
+    padding: 2px;
+    width: 15px;
+    height: 15px;
+}
+
+.tree-view-children {
+    margin-left: 15px;
+    overflow-y: auto;
+}
+
+.number-input {
+    display: flex;
+}
+
+.number-input input {
+    margin-left: 2px;
+    margin-right: 5px;
+    max-width: 80px;
+}
+
+.color-input {
+    display: flex;
+    align-items: center;
+}
+
+.color-input-sample {
+    width: 60px;
+    height: 15px;
+    border: 1px groove gray;
+}
+
+.color-picker-popover {
+    position: absolute;
+    z-index: 2;
+}
+
+.property-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.property-group h5 {
+    margin: 0px;
+    font-weight: bold;
+}
+
+.property {
+    display: flex;
+    gap: 5px;
+}
+
+.property-children {
+    display: flex;
+    gap: 5px;
+    flex-grow: 1;
+}
+
+.property-children input {
+    margin-right: 10px;
+}
+
+.slider {
+    margin: auto;
+    width: 100%;
+    height: 20px;
+}
+  
+.slider-track {
+    top: 8px;
+    height: 4px;
+    background: #ddd;
+}
+
+.slider-track.slider-track-0 {
+    background: rgb(104, 117, 217);
+}
+
+.slider-thumb {
+    cursor: pointer;
+    /*color for the thumb */
+    background: rgb(104, 117, 217);
+    /* shape of the thumb: circle */
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    /* remove default outline when selected */
+    outline: none;
+}
+
+.slider-thumb:hover {
+    box-shadow: 0 0 0 8px rgb(104, 117, 217, 0.2);
+}
+
+.slider-mark {
+    cursor: pointer;
+    top: 6px;
+    width: 1.5px;
+    height: 8px;
+    background-color: #aaaaaa;
+}
+
+.slider-mark.slider-mark-before {
+    background-color: rgb(104, 117, 217);
+}
+
+.slider-mark.slider-mark-active {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0, 0.55);
+}
+
+.modal {
+    z-index: 2;
+    position: fixed;
+    top: 200px;
+    left: 25%;
+    width: 50%;
+    background-color: rgb(64,64,64);
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.modal-header {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.modal-body {
+    border: 1px solid rgb(128, 128, 128);
+    min-height: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.modal-footer {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.modal-footer button {
+    font-size: 1em;
+    font-weight: 700;
+    color: rgb(50, 50, 50);
+    margin-left: 10px;
+}
+
+.project-files-panel .sidebar-panel-header button:last-child {
+    margin-left: auto; /* Pull settings button to right */
+}
+
+.settings {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.settings-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.settings-sidebar-tab {
+    border: 1px solid lightgray;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: large;
+}
+
+.settings-sidebar-tab.active {
+    font-weight: bold;
+}
+
+.settings-sidebar-tab:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.settings-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.editor-controls-table tr {
+    margin: 10px 0;
+}
+
+.editor-controls-key {
+    background-color: white;
+    border-radius: 5px;
+    border-style: groove;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+}
