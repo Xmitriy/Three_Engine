@@ -190,7 +190,5 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Wes Unwin - wes_unwin@hotmail.com
 
-Project Link: [https://github.com/WesUnwin/three-game-engine](https://github.com/WesUnwin/three-game-engine)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
